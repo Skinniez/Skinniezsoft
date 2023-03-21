@@ -22,7 +22,10 @@
     height: 210px;
   }
 }
-
+.u-hover-feature:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s ease-in-out;
+}
 @media (max-width: 767px) {
   .u-section-1 .u-sheet-1 {
     min-height: 308px;
