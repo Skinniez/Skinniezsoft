@@ -292,14 +292,26 @@ input[type="file"] {
             max-width: 600px;
             margin: 0 auto;
         }
-.image-grid-item{
-            padding: 20px;
-            text-align:center;
-            font-size: 14px;
-            justify-content:center;
-            border: 1px solid #ccc;
-            color:#e9adcc;
+        .image-grid-item{
+          background-color: #ccc;
+          padding: 20px;
+          font-size: 14px;
+          justify-content:center;
+          border: 1px solid #ccc;
+          color:#111;
+          width: 200px; /* Set your desired width */
+          height: 200px; /* Set your desired height */
+          box-sizing: border-box; /* Include padding and border in the width and height calculation */
+          display: flex;
+          flex-direction: column;
+          align-items:center;
+          border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
         }
-.content {
-           text-align: left;
+        
+        .content {
+          align-self: flex-end;
+          margin: auto 0 0 0;
         }
