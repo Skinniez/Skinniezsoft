@@ -2,25 +2,29 @@ const inputImage = document.getElementById('inputImage');
 const resizeButton = document.getElementById('resizeButton');
 const imageGrid = document.getElementById('imageGrid');
 
-const sizes = [128, 56, 28, 72, 36, 18];
+const sizes = [128, 72, 64, 36, 32, 18];
 
-sizes.forEach((size) => {
-  const gridItem = document.createElement('div');
-  gridItem.className = 'image-grid-item';
-  gridItem.innerHTML = `<label>${size}x${size}</label>`;
-  imageGrid.appendChild(gridItem);
-});
+function createGridItems() {
+  imageGrid.innerHTML = '';
+  sizes.forEach((size) => {
+    const gridItem = document.createElement('div');
+    gridItem.className = 'image-grid-item';
+    gridItem.innerHTML = `<label>${size}x${size}</label>`;
+    imageGrid.appendChild(gridItem);
+  });
+}
+
+createGridItems();
 
 const imageGridItems = document.querySelectorAll('.image-grid-item');
 
 inputImage.addEventListener('change', () => {
-    if (inputImage.files && inputImage.files.length > 0) {
-      resizeButton.disabled = false;
-    } else {
-      resizeButton.disabled = true;
-    }
-  });
-  
+  if (inputImage.files && inputImage.files.length > 0) {
+    resizeButton.disabled = false;
+  } else {
+    resizeButton.disabled = true;
+  }
+});
 
 resizeButton.addEventListener('click', () => {
   const file = inputImage.files[0];
@@ -28,6 +32,9 @@ resizeButton.addEventListener('click', () => {
   if (!file) {
     return;
   }
+
+  createGridItems();
+  const updatedImageGridItems = document.querySelectorAll('.image-grid-item');
 
   sizes.forEach((size, index) => {
     const reader = new FileReader();
@@ -44,7 +51,7 @@ resizeButton.addEventListener('click', () => {
 
         const resizedDataURL = canvas.toDataURL(file.type);
 
-        const imageContainer = imageGridItems[index];
+        const imageContainer = updatedImageGridItems[index];
         const existingImage = imageContainer.querySelector('img');
         if (existingImage) {
           existingImage.remove();
