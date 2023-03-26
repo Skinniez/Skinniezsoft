@@ -1,6 +1,13 @@
 html, body {
   height: 100%;
   margin: 0;
+  background-color: #478ac9;
+}
+main{
+    background-color:#478ac9;
+}
+.shadowed-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .page-container {
@@ -343,4 +350,6 @@ input[type="file"] {
         footer{
           font-family: "cairo";
           color:#e9f2f9;
+          background-color: #478ac9;
+          flex-shrink:0;
         }
