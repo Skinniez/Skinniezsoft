@@ -501,4 +501,7 @@ input[type="file"] {
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Add your tablet-specific styles here */
 }
-
+footer {
+  height: 50px; /* Set to the height of your footer */
+  flex-shrink: 0;
+}
