@@ -419,6 +419,7 @@ input[type="file"] {
           max-width: 600px;
           margin-left: 650px;
           font-size:18px;
+          text-shadow: 2px 2px 2px #000000;
         }
         .head-text:hover{
           transform:scale(1.4);
