@@ -321,6 +321,17 @@ input[type="file"] {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
         }
+        @media (max-width: 767px) {
+          .imageGrid {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 0;
+          }
+        
+          .image-grid-item {
+            width: 100px;
+            height: 100px;
+          }
+        }
         
         .content {
           align-self: flex-end;
@@ -428,3 +439,12 @@ input[type="file"] {
           max-width: 800px;
           margin: 0 auto;
         }
+        /* Mobile view */
+@media (max-width: 767px) {
+  /* Add your mobile-specific styles here */
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Add your tablet-specific styles here */
+}
