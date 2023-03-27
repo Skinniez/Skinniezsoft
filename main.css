@@ -505,3 +505,6 @@ footer {
   height: 50px; /* Set to the height of your footer */
   flex-shrink: 0;
 }
+.logoHead {
+  padding-left: 10px;
+}
