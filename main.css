@@ -416,6 +416,9 @@ input[type="file"] {
           transition: 0.4s;
           font-family:"cairo";
           color:#e9f2f9;
+          max-width: 600px;
+          margin-left: 650px;
+          font-size:24px;
         }
         .head-text:hover{
           transform:scale(1.4);
