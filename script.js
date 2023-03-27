@@ -6,6 +6,10 @@ const sizes = [128, 64, 32, 72, 36, 18];
 
 function createGridItems() {
   imageGrid.innerHTML = '';
+  const instructionsGridItem = document.createElement('div');
+  instructionsGridItem.className = 'instruction-grid-item';
+  instructionsGridItem.innerHTML = `<p>Click the "Upload" button to select an image from your computer. Click the "Resize" button to generate new images at the specified sizes. Click on each resized image to download that size.</p>`;
+  imageGrid.appendChild(instructionsGridItem);
   sizes.forEach((size) => {
     const gridItem = document.createElement('div');
     gridItem.className = 'image-grid-item';

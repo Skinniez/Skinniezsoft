@@ -348,7 +348,7 @@ input[type="file"] {
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            margin-top:-250px;
+            margin-top:-20px;
         }
         .image-grid-item{
           background-color: #ccc;
@@ -367,6 +367,18 @@ input[type="file"] {
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+        }
+        .instruction-grid-item {
+          color:#111;
+          grid-column: 1 / span 3;
+          background-color: #ccc;
+          padding: 20px;
+          text-align: center;
+          border-top-right-radius: 40px;
+          border-bottom-left-radius: 40px;
+          border-bottom-right-radius: 40px;
+          border-top-left-radius: 40px;
+          justify-content: center;
         }
         @media (max-width: 767px) {
           .imageGrid {
@@ -466,12 +478,6 @@ input[type="file"] {
         }
         .contact-3:hover{
           transform:scale(1.4);
-        }
-        .instruction-container{
-          color:#ccc;
-          padding-left:100px;
-          max-width: 400px;
-          text-shadow: 2px 2px 2px black;
         }
         .grid-container{
           display: grid;
