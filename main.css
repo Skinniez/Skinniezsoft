@@ -1,8 +1,10 @@
+/*! color palette https://www.color-hex.com/color/adcce9#color-schemes */
+
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #478ac9;
 }
+
 main{
     background-color:#478ac9;
 }
@@ -293,12 +295,13 @@ input[type="file"] {
 }
 .imageGrid{
   display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             grid-gap: 10px;
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
+            margin-top:-250px;
         }
         .image-grid-item{
           background-color: #ccc;
@@ -351,5 +354,64 @@ input[type="file"] {
           font-family: "cairo";
           color:#e9f2f9;
           background-color: #478ac9;
-          flex-shrink:0;
+          flex-shrink: 0;
+        }
+        .social-icons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 20px;
+          padding-left: 0;
+        }
+        
+        .social-icons li {
+          list-style: none;
+          margin: 0 10px;
+        }
+        
+        .social-icons li a {
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+        }
+        
+        .social-icons li a i {
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        
+        .social-icons li a:hover i {
+          color: #1DA1F2;
+        }
+        
+        .head-text {
+          margin-top: 50px;
+          text-align: center;
+        }
+        .contact-1{
+          transform:scale(1.1);
+          transition:0.4s;
+        }
+        .contact-1:hover{
+          transform:scale(1.4);
+        }
+        .contact-2{
+          transition:0.4s;
+        }
+        .contact-2:hover{
+          transform:scale(1.4);
+        }
+        .contact-3{
+          transition:0.4s;
+        }
+        .contact-3:hover{
+          transform:scale(1.4);
+        }
+        .instruction-container{
+          color:#ccc;
+          padding-left:100px;
+          max-width: 400px;
+          text-shadow: 2px 2px 2px black;
         }

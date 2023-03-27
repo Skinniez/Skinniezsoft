@@ -2,7 +2,7 @@ const inputImage = document.getElementById('inputImage');
 const resizeButton = document.getElementById('resizeButton');
 const imageGrid = document.getElementById('imageGrid');
 
-const sizes = [128, 72, 64, 36, 32, 18];
+const sizes = [128, 64, 32, 72, 36, 18];
 
 function createGridItems() {
   imageGrid.innerHTML = '';
