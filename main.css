@@ -4,6 +4,9 @@ html, body {
   height: 100%;
   margin: 0;
 }
+.mainBg{
+  min-height: 100%;
+}
 
 main{
     background-color:#478ac9;
