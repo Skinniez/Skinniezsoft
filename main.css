@@ -405,7 +405,7 @@ input[type="file"] {
         }
         
         .logoArt {
-          max-width: 30%; /* Adjust this value based on your preference */
+          max-width: 20%; /* Adjust this value based on your preference */
           height: auto;
           transition: 0.4s;
         }
@@ -595,7 +595,7 @@ body {
   margin-bottom: 1rem;
 }
 .logoArt {
-  max-width: 100%;
+  max-width: 30%;
 }
 .sksoft {
   width: 100%;
