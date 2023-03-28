@@ -15,6 +15,7 @@ main{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -511,4 +512,10 @@ footer {
 }
 .logoHead {
   padding-left: 10px;
+}
+.sksoft {
+  display: inline-block;
+  height: 30px;
+  margin-left: 550px;
+  margin-top:7px;
 }
