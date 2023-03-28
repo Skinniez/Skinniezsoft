@@ -17,7 +17,7 @@ function createGridItems() {
     gridItem.innerHTML = `<label>${size}x${size}</label>`;
     imageGrid.appendChild(gridItem);
   });
-  fileButton.innerText = 'Choose a file'; // reset the button label
+  fileButton.innerText = 'Selected File'; // reset the button label
 }
 
 createGridItems();
@@ -30,7 +30,7 @@ inputImage.addEventListener('change', () => {
     fileButton.innerText = inputImage.files[0].name; // display the file name on the button
   } else {
     resizeButton.disabled = true;
-    fileButton.innerText = 'Choose a file'; // reset the button label
+    fileButton.innerText = 'Selected File'; // reset the button label
   }
 });
 
