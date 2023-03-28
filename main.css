@@ -417,8 +417,6 @@ input[type="file"] {
           transition: 0.4s;
           font-family:"cairo";
           color:#e9f2f9;
-          max-width: 600px;
-          margin-left: 650px;
           font-size:18px;
           text-shadow: 2px 2px 2px #000000;
         }
@@ -497,15 +495,7 @@ input[type="file"] {
           max-width: 800px;
           margin: 0 auto;
         }
-        /* Mobile view */
-@media (max-width: 767px) {
-  /* Add your mobile-specific styles here */
-}
 
-/* Tablet view */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Add your tablet-specific styles here */
-}
 footer {
   height: 50px; /* Set to the height of your footer */
   flex-shrink: 0;
@@ -518,4 +508,103 @@ footer {
   height: 30px;
   margin-left: 550px;
   margin-top:7px;
+}
+/* Mobile view */
+@media (max-width: 767px) {
+  .mainBg {
+    min-height: auto;
+  }
+
+  .u-header {
+    padding: 5px 0;
+  }
+
+  .u-logo-image {
+    max-height: 40px;
+  }
+
+  .u-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .u-nav-item {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .resizeButton {
+    padding: 15px 30px;
+  }
+
+  .imageGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-grid-item {
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+  }
+
+  .head-text {
+    max-width: 100%;
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .headResp{
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .contact-1 {
+    transform: none;
+  }
+
+  .homeImg{
+    max-width: 50vh;
+  }
+}
+  @media (max-width: 1440px){
+
+    .headResp{
+      scale:70%;
+    }
+    .homeImg{
+      max-width: 50vh;
+    }
+  }
+
+body {
+  background-color:#478ac9;
+  min-height: 100vh;
+}
+.homeContent{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+.homeImg {
+  max-width: 100%;
+  height: auto;
+}
+.logo-art-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.logoArt {
+  max-width: 100%;
+}
+.sksoft {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.headResp {
+  font-size: 2rem;
+  text-align: center;
 }
