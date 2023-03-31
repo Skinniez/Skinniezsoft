@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 50px;
+  }
+  
+  .gradient {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #FFA07A, #FF4500);
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gradient.active {
+    border: 5px solid #FFA07A;
+  }
+  
+  .copy-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #FFA07A;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .copy-button:hover {
+    background: #FF4500;
+  }
+  
+
+  
+  @media only screen and (max-width: 768px) {
+    .randomize-button {
+      top: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .randomize-button {
+      top: 90%;
+    }
+  }
+  
+  .randomize-button {
+    left:40%;
+    top:60%;
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .randomize-button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .randomize-button:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    transition: 0.5s;
+  }
+  
+  
+  
+  
+  .colorPalette {
+    text-align: center;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .page-container {
+    min-height: 100%;
+    position: relative;
+  }
+  
+  .content-container {
+    padding-bottom: 60px; /* height of the footer */
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* height of the footer */
+  }
+  

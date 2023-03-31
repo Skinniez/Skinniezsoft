@@ -502,6 +502,7 @@ footer {
 }
 .logoHead {
   padding-left: 10px;
+  float:left;
 }
 .sksoft {
   display: inline-block;
